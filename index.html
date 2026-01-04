@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <title>Primeiros Passos com HTML</title>
+    </head>
+    <body>
+        <h1>Primeiros Passos com HTML</h1>
+        <hr/>
+        <h2>Index</h2>
+        <ol>
+            <li>
+                <h3 id="index-entendendo-client-server">Entendendo Comunicação <i>Client x Server</i></h3>
+                <ul>
+                    <li>Hitória da Web</li>
+                    <li>O que são Clients</li>
+                    <li>O que são Servers</li>
+                    <li>Linguanges de Programação</li>
+                </ul>
+                <h3 id="index-entendendo-html-pratica">Introdução ao <strong style="color: red"><i>HTML</i></strong> na prática</h3>
+                <ul>
+                    <li>Ferramentas Utilizadas</li>
+                    <li>Inspetor de Elementos</li>
+                    <li>Estrutura Básica do HTML</li>
+                    <li>Falando sobre Tags</li>
+                    <li>Atributos das Tags</li>
+                    <li>Textos</li>
+                    <li>Listas Ordenadas e Não Ordenadas</li>
+                    <li>Links</li>
+                </ul>
+            </li>
+        </ol>
+        <h2>Entendendo Comunicação <i>Client x Server</i></h2>
+        
+        <h3 style="color: blue; font:bold">Hitória da Web</h2>
+        <a href="#index-entendendo-client-server"><small style="color: gray">(voltar)</small></a>
+        <p>
+            Tim Berners-Lee, um cientista britânico, inventou a World Wide Web (WWW) em 1989, enquanto trabalhava no CERN. 
+            A Web foi originalmente concebida e desenvolvida para atender à demanda por compartilhamento automatizado de 
+            informações entre cientistas em universidades e institutos ao redor do mundo.
+            O CERN não é um laboratório isolado, mas sim o ponto focal de uma extensa comunidade que inclui mais de 17.000 
+            cientistas de mais de 100 países. Embora normalmente passem algum tempo nas instalações do CERN, os cientistas 
+            geralmente trabalham em universidades e laboratórios nacionais em seus países de origem. Ferramentas de comunicação 
+            confiáveis ​​são, portanto, essenciais.
+            A ideia básica da WWW era fundir as tecnologias em evolução de computadores, redes de dados e hipertexto em um sistema 
+            de informação global poderoso e fácil de usar.
+
+            <img src="./imagens/Tim Berners-Lee.jpg" style="height: 250px; display: block;" alt="Tim Berners-Lee" title="Tim Berners-Lee, fotografado no CERN (Imagem: CERN)"/>
+
+            <blockquote><i>Fonte: <a href="https://home.cern/science/computing/birth-web/short-history-web" target="_blank">Cern</a></i></blockquote>
+        </p>
+        
+        <h3 style="color: blue; font:bold">O que são Clients</h2>
+        <a href="#index-entendendo-client-server"><small style="color: gray">(voltar)</small></a>
+        <p>
+            O Cliente é a aplicação que o usuário interage diretamente. Ele é responsável por apresentar a interface do usuário e 
+            coletar entradas para enviar ao servidor. Em uma aplicação web, o navegador web atua como cliente, enquanto em uma aplicação 
+            desktop, o próprio software instalado no computador do usuário é o cliente.
+
+            <blockquote><i>Fonte: <a href="https://blog.grancursosonline.com.br/arquitetura-cliente-servidor" target="_blank">grancursosonline</a></i></blockquote>
+        </p>
+        
+        <h3 style="color: blue; font:bold">O que são Servers</h2>
+        <a href="#index-entendendo-client-server"><small style="color: gray">(voltar)</small></a>
+        <p>
+            O Servidor é a aplicação que recebe e processa as solicitações do cliente. Ele gerencia os dados, executa a lógica de negócios 
+            e retorna as respostas apropriadas ao cliente. Servidores podem ser configurados para lidar com múltiplas solicitações simultaneamente, 
+            garantindo eficiência e escalabilidade.
+
+            <blockquote><i>Fonte: <a href="https://blog.grancursosonline.com.br/arquitetura-cliente-servidor" target="_blank">grancursosonline</a></i></blockquote>
+        </p>
+        
+        <h3 style="color: blue; font:bold">Linguanges de Programação</h2>
+        <a href="#index-entendendo-client-server"><small style="color: gray">(voltar)</small></a>
+        <p>
+            Linguagem de Programação é uma linguagem escrita e formal que especifica um conjunto de instruções e regras usadas para gerar programas 
+            (software). Um software pode ser desenvolvido para rodar em um computador, dispositivo móvel ou em qualquer equipamento que permita sua 
+            execução. Existem várias linguagens e elas servem para muitos propósitos. Alguns óbvios, como criar um software, outros menos, 
+            como controlar um carro ou uma torradeira.
+
+            <blockquote><i>Fonte: <a href="https://universidadedatecnologia.com.br/o-que-e-linguagem-de-programacao" target="_blank">universidadedatecnologia</a></i></blockquote>
+        </p>
+
+        <h2>Introdução ao <strong style="color: red"><i>HTML</i></strong> na prática</i></h2>
+
+        <h3 style="color: blue; font:bold">Ferramentas Utilizadas</h2>
+        <a href="#index-entendendo-html-pratica" target="_blank"><small style="color: gray">(voltar)</small></a>
+        <ul>
+            <li>VSCode</li>
+            <li>GitHub</li>
+            <li>Extenção Live Server</li>
+        </ul>
+
+        <h3 style="color: blue; font:bold">Inspetor de Elementos</h2>
+        <a href="#index-entendendo-html-pratica"><small style="color: gray">(voltar)</small></a>
+        <p>
+            A ferramenta Inspecionar Elemento é muito mais do que uma forma de exibir código. Muitas vezes há vários painéis a serem acessados:
+            <ul>
+                <li>Inspecionar – Isto é chamado de Elementos em alguns navegadores. É a tela principal da ferramenta Inspecionar Elemento e mostra 
+                    o código da página, juntamente com o CSS específico do elemento. Você também encontrará mais detalhes sobre o “grid system” de 
+                    um site e outros aspectos.
+                </li>
+                <li>
+                    Console – Este é um registro de aviso para um site, e é um lugar onde você também pode inserir trechos de código para realizar 
+                    um teste rápido de uma idéia.
+                </li>
+                <li>
+                    Rede – Aqui, você verá as solicitações feitas de e para um servidor, tais como todas as solicitações POST e GET.
+                </li>
+                <li>
+                    Performance – É claro, um site tem que ser performante. Como tal, há uma ferramenta dedicada para ajudá-lo a avaliar algumas 
+                    métricas essenciais do site. Alguns navegadores fazem melhor do que outros aqui.
+                </li>
+                <li>
+                    Memória – Este painel permite ver como um site utiliza a memória e, novamente, alguns navegadores oferecem métricas extensivas.
+                </li>
+                <li>
+                    Aplicativo – Dentro deste painel, você pode ver toda uma gama de informações sobre o cache do site, serviços de fundo e muito mais.
+                </li>
+            </ul>
+            <blockquote><i>Fonte: <a href="https://kinsta.com/pt/blog/ferramenta-inspecionar" target="_blank">kinsta</a></i></blockquote>
+        </p>
+        <h3 style="color: blue; font:bold">Estrutura Básica do HTML</h2>
+        <a href="#index-entendendo-html-pratica"><small style="color: gray">(voltar)</small></a>
+        <p>
+            HTML não é uma linguagem de programação; é uma linguagem de marcação, usada para definir a estrutura do seu conteúdo. HTML consiste de uma 
+            série de elementos, que você usa para delimitar ou agrupar diferentes partes do conteúdo para que ele apareça ou atue de determinada maneira. 
+            As tags anexas podem transformar uma palavra ou imagem num hiperlink, pode colocar palavras em itálico, pode aumentar ou diminuir a fonte 
+            e assim por diante.
+
+            <strong>As principais partes de um elemento são:</strong>
+            <ol>
+                <li>
+                    A tag de abertura: Consiste no nome do elemento, envolvido em parênteses angulares de abertura e fechamento. 
+                    Isso demonstra onde o elemento começa, ou onde seu efeito se inicia — nesse caso, onde é o começo do parágrafo.
+                </li>
+                <li>
+                    A tag de fechamento: Isso é a mesma coisa que a tag de abertura, exceto que inclui uma barra antes do nome do elemento. 
+                    Isso demonstra onde o elemento acaba — nesse caso, onde é o fim do parágrafo. Esquecer de incluir uma tag de fechamento é um dos 
+                    erros mais comuns de iniciantes e pode levar a resultados estranhos.
+                </li>
+                <li>
+                    O conteúdo: Esse é o conteúdo do elemento, que nesse caso é apenas texto.
+                </li>
+                <li>
+                    O elemento: A tag de abertura, a de fechamento, e o conteúdo formam o elemento.
+                </li>
+            </ol>
+            <blockquote><i>Fonte: <a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content" target="_blank">developer.mozila</a></i></blockquote>
+        </p>
+
+        <h3 style="color: blue; font:bold">Falando sobre Tags</h2>
+        <a href="#index-entendendo-html-pratica"><small style="color: gray">(voltar)</small></a>
+        <p>
+            Uma tag é uma etiqueta ou uma palavra -chave que pode ser anexada a uma informação, dados ou conteúdo para ajudar a identificá -la e organizá -la.É amplamente utilizado em tecnologia, 
+            computação, programação e comunicações para categorizar e gerenciar grandes quantidades de dados.
+
+            <blockquote><i>Fonte: <a href="https://www.lenovo.com/br/pt/glossary/tag/index.html?orgRef=https%253A%252F%252Fwww.google.com%252F&srsltid=AfmBOornLTIy_iVEzfp_kCkWJlWlynFp7CYdzeHEcKl2ysglj9XpVRze" target="_blank">lenovo.com</a></i></blockquote>
+        </p>
+
+        <h3 style="color: blue; font:bold">Atributos das Tags</h2>
+        <a href="#index-entendendo-html-pratica"><small style="color: gray">(voltar)</small></a>
+        <p>
+            Atributos HTML (em inglês html attributes") são palavras especiais usadas dentro da tag de abertura para controlar o comportamento do elemento. 
+            Os atributos HTML são um modificador de um tipo de elemento HTML. Com eles, podemos identificar melhor um elemento, informar qual arquivo 
+            aquela tag deve utilizar, indicar o tipo de um campo de texto, etc. 
+            Há dois tipos de atributos no HTML, os globais, aceitos por todas as tags, como, por exemplo: class, id, lang, style e algumas outras 
+            que você pode conferir na documentação; e também existem os específicos, que somente algumas tags possuem, como: src, disabled, href, 
+            label, etc.
+            <blockquote><i>Fonte: <a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-5-atributos-elementos?srsltid=AfmBOoqDCMyoQtC4KtBBbA3pYZ0_Rsa0ugDAM84psnvbtZEvPmotyXrJ">alura.com</a></i></blockquote>
+        </p>
+
+        <h3 style="color: blue; font:bold">Textos</h2>
+        <a href="#index-entendendo-html-pratica"><small style="color: gray">(voltar)</small></a>
+        <p>
+            Um dos principais objetivos do HTML é dar estrutura de texto e significado, também conhecido como semântica, para que um navegador possa exibi-lo corretamente. Este artigo explica a forma como HTML pode ser 
+            usado para estruturar uma página de texto, adicionar títulos e parágrafos, enfatizar palavras, criar listas e muito mais.
+
+            <blockquote><i>Fonte: <a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs" target="_blank">developer.mozilla</a></i></blockquote>
+        </p>
+        <h3 style="color: blue; font:bold">Listas Ordenadas e Não Ordenadas</h2>
+        <a href="#index-entendendo-html-pratica"><small style="color: gray">(voltar)</small></a>
+        <p>
+            Agora voltemos nossa atenção para as listas. As listas estão em toda parte na vida — de sua lista de 
+            compras à lista de instruções que você seguiu inconscientemente para chegar à sua casa todos os dias, para as listas das 
+            instruções que está seguindo nesses tutoriais! As listas também estão na Web e temos três tipos diferentes para prestarmos atenção.
+            
+            <h4>Não ordenada</h4>
+            As listas não ordenadas são usadas para marcar listas de itens para os quais a ordem dos itens não importa;
+
+            <h4>Ordenada</h4>
+            As listas ordenadas são listas em que a ordem dos itens é importante
+
+            <blockquote><i>Fonte: <a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs" target="_blank">developer.mozilla</a></i></blockquote>
+        </p>
+
+        <h3 style="color: blue; font:bold">Links</h2>
+        <a href="#index-entendendo-html-pratica"><small style="color: gray">(voltar)</small></a>
+        <p>
+            "Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e 
+            vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web. O HTML usa "Marcação" para anotar texto, imagem e outros conteúdos para exibição em um 
+            navegador da Web. A marcação HTML inclui "elementos" especiais, como <head>, <title>, <body>, <header>, <footer>, <article>, <section>, <p>, <div>, <span>, <img>, <aside>, <audio>, <canvas>, 
+            <datalist>, <details>, <embed>, <nav>, <output>, <progress>, <video>, <ul>, <ol>, <li> e muitos outros. 
+            Um elemento HTML é separado de outro texto em um documento por "tags", que consistem no nome do elemento entre "<" e ">". O nome de um elemento dentro de uma tag é insensível a maiúsculas e 
+            minúsculas. Isto é, pode ser escrito em maiúsculas, minúsculas ou um mistura. Por exemplo, a tag <title> pode ser escrita como <Title>, <TITLE> ou de qualquer outra forma.
+        </p>
+        <blockquote><i>Fonte: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">developer.mozilla</a></i></blockquote>
+    </body>
+</html>
